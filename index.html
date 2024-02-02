@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikachu</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            position: relative;
+            background-color: #D5D5D5;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 300px 30px;
+        }
+
+        #pokemonName{
+            padding: 20px 40px;
+            font-size: 30px;
+            border-radius: 10px;
+            border: none;
+            background-color: #800080;
+            color: black;
+        }
+        button{
+            padding: 20px 40px;
+            font-size: 30px;
+            margin:0 15px;
+            border: none;
+            border-radius: 10px;
+            background-color:#D5ACD5 ;
+
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #800080;
+            color: white;
+            outline: hidden;
+           
+        }
+        .pic{
+            position: absolute;
+            /* margin: 0 auto; */
+
+           top:60%;
+           left: 33%;
+           /* bottom: 0; */
+            
+           width: 30vw;
+           height: 10vh;
+            border: 5px solid black;
+            background-color: #FFFFCA;
+        }
+        img {
+            width:60vw ;
+            height:60vh ;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
+        <button onclick="fetchData()">Fetch Pokemon</button><br>
+        
+    </div>
+    <div class="pic">
+
+        <img src="" alt="" id="pokemonSprite" style="display: none;">
+
+    </div>
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>
